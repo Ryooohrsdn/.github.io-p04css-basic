@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: linear-gradient(150deg, #9A9CEA, #A2DCEE, #92DE8B);
+    color: white;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+}
+
+.bentuk{
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 25px;
+    background: linear-gradient(135deg#92DE8B, #A2DCEE, #9A9CEA);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.32)
+    , 0 10px 10px rgba(0, 0, 0, 0.30);
+}
+
+.bentuk .bagianheading{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.bentuk .bagianheading::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #A2DCEE;
+}
+
+.bentuk form .detailisi{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .detailisi .kotakisi{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+
+.detailisi .kotakisi .isiform{
+    display: block;
+    font-weight: 350;
+    margin-bottom: 5px;
+}
+
+.detailisi .kotakisi input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    padding-left: 15px;
+    font-size: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
